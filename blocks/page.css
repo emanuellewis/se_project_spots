@@ -2,12 +2,10 @@ body,
 h1 {
   margin: 0;
   padding: 0;
-  color: #fff;
 }
 .page {
-  /* background-color: #fcf5e5; */
-  background-color: #000;
   margin: 0;
   padding: 0;
-  color: fff;
+  min-height: 100vh;
+  background-color: #fcf5e5;
 }

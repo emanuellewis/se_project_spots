@@ -1,0 +1,80 @@
+.profile {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1.25rem;
+  max-width: 100%;
+
+  border-bottom: #212121 1px solid;
+}
+
+.profile__content {
+  display: flex;
+  /* flex-direction: row; */
+
+  padding: 0;
+  margin: 0;
+}
+
+.profile__avatar {
+  max-width: 190px;
+  max-height: 190px;
+  border-radius: 0.5rem;
+}
+
+.profile__column {
+  margin: 0;
+  padding: 0;
+}
+.profile__name {
+  max-width: 26.3rem;
+  height: 2rem;
+}
+
+.profile__description {
+  width: 6rem;
+  height: 1rem;
+}
+
+.profile__edit-button {
+  background: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile__edit-button:hover {
+  cursor: pointer;
+}
+
+.profile__edit-icon {
+  max-width: 75%;
+  max-height: 80%;
+}
+
+.porfile__new-post-button-image {
+  width: 0.75rem;
+  height: 0.75rem;
+  margin-right: 0.5rem;
+}
+
+.profile__new-post-button {
+  min-width: 149px;
+  height: 52px;
+  background-color: #212121;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  padding: 16px 24px 16px 32px;
+  color: #fcf5e5;
+  border-radius: 8px;
+  /* white-space: nowrap; */
+  /* flex-wrap: nowrap; */
+}
+
+.profile__new-post-button:hover {
+  cursor: pointer;
+}
