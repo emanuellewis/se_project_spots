@@ -2,13 +2,14 @@
   /* max-width: 90rem; */
   width: min(100%, 90rem);
   margin: 0 auto;
-  border-bottom: #212121 1px solid;
-  padding-bottom: 2.5rem;
-  row-gap: 1.25rem;
+  border-bottom: #21212166 1px solid;
+  padding: 1.25rem 0 2.5rem;
+  row-gap: 2.5rem;
   column-gap: 1.25rem;
 
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(413px, 1fr));
+  /* grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); */
 }
 
 .card {
@@ -19,12 +20,61 @@
 
 .card__image {
   width: 100%;
-  aspect-ratio: 1 / 1;
+  height: 413px;
+
+  /* aspect-ratio: 1 / 1; */
   border-radius: 0.5rem;
   object-position: center;
   object-fit: cover;
 }
 
 .card__description {
-  font-weight: normal;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.25rem; /* 20px */
+  font-weight: 500;
+
+  max-width: 22.0625rem; /* 353px */
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
+
+@media screen and (max-width: 627px) {
+  .cards {
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  }
+
+  .card__description {
+    max-width: 14.6875rem; /* 235px */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .card__description {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+/* 
+desktop: 
+  grid-template-columns: repeat(auto-fit, minmax(413px, 1fr))
+
+add a media query at:
+  max-width: 627px to switch to minmax(288px, 1fr) (canonical) so a single card fits within 320px
+
+keep the:
+  grid/container centered (e.g., container max-width + margin: 0 auto) to prevent overflow.
+
+Card images should have fixed heights:
+  (413px desktop / 288px mobile) with 8px radius and object-fit: cover. The current 1:1 aspect ratio does not match Figma and breaks pixel specs.
+*/
