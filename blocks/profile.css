@@ -55,7 +55,6 @@
 .profile__edit-button {
   background: none;
   border: none;
-  display: flex;
   justify-content: center;
   align-items: center;
   display: inline-flex;
