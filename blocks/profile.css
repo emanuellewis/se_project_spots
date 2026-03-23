@@ -1,12 +1,13 @@
 .profile {
-  margin-top: 80px;
+  margin-top: 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-bottom: 1.25rem;
-  max-width: 100%;
+  max-width: 90rem;
 
   border-bottom: #212121 1px solid;
+  margin-bottom: 1.25rem;
 }
 
 .profile__content {
@@ -18,8 +19,8 @@
 }
 
 .profile__avatar {
-  max-width: 190px;
-  max-height: 190px;
+  max-width: 11.8rem;
+  max-height: 11.8rem;
   border-radius: 0.5rem;
 }
 
@@ -61,16 +62,17 @@
 }
 
 .profile__new-post-button {
-  min-width: 149px;
-  height: 52px;
+  min-width: 9.3rem;
+  height: 3.25rem;
   background-color: #212121;
   display: flex;
   justify-content: center;
   align-items: center;
   border: none;
-  padding: 16px 24px 16px 32px;
+  padding: 1rem 1.5rem 1rem 2rem;
   color: #fcf5e5;
-  border-radius: 8px;
+  border-radius: 0.5rem;
+  margin: auto 0 1.25rem auto;
   /* white-space: nowrap; */
   /* flex-wrap: nowrap; */
 }
