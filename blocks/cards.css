@@ -27,7 +27,7 @@
 }
 
 .card__description {
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif, Arial;
   font-size: 1.25rem; /* 20px */
   font-weight: 500;
   max-width: 25.8125rem;
@@ -60,6 +60,17 @@
   .cards {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .card {
+    align-items: center;
+  }
+
+  .card__image {
+    width: 100%;
+    max-width: 413px;
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
 }
 
 @media screen and (max-width: 627px) {
@@ -76,6 +87,7 @@
   .card__image {
     width: 288px;
     height: 288px;
+    margin-bottom: 0.75rem;
   }
 
   .card__description {
@@ -83,6 +95,3 @@
     text-align: center;
   }
 }
-
-/* 
-*/

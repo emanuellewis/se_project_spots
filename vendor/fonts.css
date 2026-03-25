@@ -1,15 +1,13 @@
 @font-face {
-  font-family: "Inter";
+  font-family: "Poppins";
   font-style: normal;
-  src: url(fonts/Inter/Inter-Italic-VariableFont_opsz,wght.ttf);
+  font-weight: 400;
+  src: url("./fonts/Poppins-Regular.ttf") format("truetype");
 }
-@font-face {
-  font-family: "Noto Serif";
-  font-style: normal;
-  src: url(fonts/Noto_Serif/NotoSerif-VariableFont_wdth,wght.ttf);
-}
+
 @font-face {
   font-family: "Poppins";
   font-style: normal;
-  src: url(fonts/Poppins/Poppins-Black.ttf);
+  font-weight: 500;
+  src: url("./fonts/Poppins-Medium.ttf") format("truetype");
 }
