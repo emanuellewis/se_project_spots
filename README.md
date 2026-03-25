@@ -37,6 +37,10 @@ Breakpoint - Layout
 
 Check out [EmanuelLewis-ProjectPitch-SpotsFinalStage](https://drive.google.com/file/d/1iYuArDXqsW4IZ7Yp4bq4LdWJc9EwYCPo/view?usp=drivesdk), where I describe my project and some challenges I faced while building it.
 
+## Live Project
+
+[Click here to view the project](https://emanuellewis.github.io/se_project_spots/)
+
 ## Project Structure
 
 ```
