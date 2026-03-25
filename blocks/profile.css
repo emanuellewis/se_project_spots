@@ -98,10 +98,13 @@
   color: #fcf5e5;
   border-radius: 0.5rem;
   margin: 0;
+  transition: ease-in-out 0.2s;
+  opacity: 1;
+  cursor: pointer;
 }
 
 .profile__new-post-button:hover {
-  cursor: pointer;
+  opacity: 0.4;
 }
 
 @media screen and (max-width: 627px) {

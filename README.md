@@ -33,6 +33,10 @@ Breakpoint - Layout
 > ≤ 1320px - 2-column grid  
 >  ≤ 627px - Single column, 288px cards
 
+## Project Pitch Video
+
+Check out [EmanuelLewis-ProjectPitch-SpotsFinalStage](https://drive.google.com/file/d/1iYuArDXqsW4IZ7Yp4bq4LdWJc9EwYCPo/view?usp=drivesdk), where I describe my project and some challenges I faced while building it.
+
 ## Project Structure
 
 ```
