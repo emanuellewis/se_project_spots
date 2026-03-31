@@ -165,6 +165,68 @@
       <footer class="footer">
         <p class="footer__information">2026 © Spots</p>
       </footer>
+
+      <div class="modal">
+        <div class="modal__content">
+          <button class="modal__close-btn" type="button">
+            <img src="./images/close-btn.svg" alt="Close Button" />
+          </button>
+          <h2 class="modal__title">Edit Profile</h2>
+          <form class="modal__form">
+            <label for="profile-name_input" class="modal__label">
+              Name
+              <input
+                id="profile-name_input"
+                type="text"
+                class="modal__input"
+                placeholder="Type your name"
+              />
+            </label>
+
+            <label for="profile-description_input" class="modal__label">
+              Description
+              <input
+                id="profile-description_input"
+                type="text"
+                class="modal__input"
+                placeholder="Describe yourself"
+              />
+            </label>
+            <button type="submit" class="modal__submit-btn">Save</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="modal modal_is-opened">
+        <div class="modal__content">
+          <button class="modal__close-btn" type="button">
+            <img src="./images/close-btn.svg" alt="Close Button" />
+          </button>
+          <h2 class="modal__title">New post</h2>
+          <form class="modal__form">
+            <label for="profile-name_input" class="modal__label">
+              Image link
+              <input
+                id="profile-name_input"
+                type="text"
+                class="modal__input"
+                placeholder="Paste a link the picture"
+              />
+            </label>
+
+            <label for="profile-description_input" class="modal__label">
+              Caption
+              <input
+                id="profile-description_input"
+                type="text"
+                class="modal__input"
+                placeholder="Type your caption"
+              />
+            </label>
+            <button type="submit" class="modal__submit-btn">Save</button>
+          </form>
+        </div>
+      </div>
     </div>
   </body>
 </html>
