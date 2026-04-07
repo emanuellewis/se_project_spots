@@ -1,5 +1,7 @@
 .modal {
-  visibility: hidden;
+  /* visibility: hidden; */
+  opacity: 0;
+  pointer-events: none;
   background-color: rgb(0, 0, 0, 0.5);
   position: fixed;
   top: 0;
@@ -11,10 +13,12 @@
   justify-content: center;
   align-items: center;
   padding: 0 10px;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .modal_is-opened {
-  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .modal__content {
@@ -37,6 +41,10 @@
   transition: opacity 0.2s ease;
   background: none;
   border: none;
+}
+
+.modal__close-btn:hover {
+  opacity: 1;
 }
 
 .modal__title {
@@ -65,13 +73,19 @@
   margin: 8px 0 0;
   padding: 16px 12px;
   border-radius: 8px;
-  border: 1px solid #212121;
-  opacity: 0.3;
+  border: 1px solid #21212140;
+  color: rgba(33, 33, 33, 0.3);
   font-size: 20px;
 }
 
 .modal__input:hover {
-  opacity: 1;
+  color: rgba(33, 33, 33, 1);
+  border-color: rgba(33, 33, 33, 1);
+}
+
+.modal__input:focus,
+.modal__input:not(:placeholder-shown) {
+  color: rgba(33, 33, 33, 1);
 }
 
 modal__input::placeholder {
@@ -88,6 +102,12 @@ modal__input::placeholder {
   border-radius: 8px;
   font-size: 16px;
   cursor: pointer;
+  transition: ease-in-out 0.2s;
+  opacity: 1;
+}
+
+.modal__submit-btn:hover {
+  opacity: 0.4;
 }
 
 @media screen and (max-width: 627px) {
