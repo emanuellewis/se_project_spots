@@ -53,115 +53,29 @@
         </section>
 
         <section class="cards">
-          <div class="card">
-            <img
-              src="./images/1-photo-by-moritz-feldmann-from-pexels.jpg"
-              alt=""
-              class="card__image"
-            />
-            <h2 class="card__description">
-              Val Thorens
-              <button class="card__description-button" type="button">
-                <img
-                  src="./images/State=Hover.png"
-                  alt="Like Button"
-                  class="card__description-button-img"
-                />
-              </button>
-            </h2>
-          </div>
-          <div class="card">
-            <img
-              src="./images/2-photo-by-ceiline-from-pexels.jpg"
-              alt=""
-              class="card__image"
-            />
-            <h2 class="card__description">
-              Restaurant terrace
-              <button class="card__description-button" type="button">
-                <img
-                  src="./images/State=Hover.png"
-                  alt="Like Button"
-                  class="card__description-button-img"
-                />
-              </button>
-            </h2>
-          </div>
-
-          <div class="card">
-            <img
-              src="./images/3-photo-by-tubanur-dogan-from-pexels.jpg"
-              alt=""
-              class="card__image"
-            />
-            <h2 class="card__description">
-              An outdoor cafe
-              <button class="card__description-button" type="button">
-                <img
-                  src="./images/State=Hover.png"
-                  alt="Like Button"
-                  class="card__description-button-img"
-                />
-              </button>
-            </h2>
-          </div>
-
-          <div class="card">
-            <img
-              src="./images/4-photo-by-maurice-laschet-from-pexels.jpg"
-              alt=""
-              class="card__image"
-            />
-            <h2 class="card__description">
-              A very long bridge, over the forest...
-
-              <button class="card__description-button" type="button">
-                <img
-                  src="./images/State=Hover.png"
-                  alt="Like Button"
-                  class="card__description-button-img"
-                />
-              </button>
-            </h2>
-          </div>
-
-          <div class="card">
-            <img
-              src="./images/5-photo-by-van-anh-nguyen-from-pexels.jpg"
-              alt=""
-              class="card__image"
-            />
-            <h2 class="card__description">
-              Tunnel with morning light
-              <button class="card__description-button" type="button">
-                <img
-                  src="./images/State=Hover.png"
-                  alt="Like Button"
-                  class="card__description-button-img"
-                />
-              </button>
-            </h2>
-          </div>
-
-          <div class="card">
-            <img
-              src="./images/6-photo-by-moritz-feldmann-from-pexels.jpg"
-              alt=""
-              class="card__image"
-            />
-            <h2 class="card__description">
-              Mountain house
-              <button class="card__description-button" type="button">
-                <img
-                  src="./images/State=Hover.png"
-                  alt="Like Button"
-                  class="card__description-button-img"
-                />
-              </button>
-            </h2>
-          </div>
+          <ul class="cards__list"></ul>
         </section>
+
+        <template id="template-card">
+          <div class="card">
+            <button
+              class="card__delete-btn"
+              type="button"
+              aria-label="Delete Button"
+            ></button>
+            <img src="" alt="" class="card__image" />
+            <h2 class="card__description">
+              <span class="card__title"></span>
+              <button
+                class="card__description-button"
+                type="button"
+                aria-label="Like Button"
+              ></button>
+            </h2>
+          </div>
+        </template>
       </main>
+
       <footer class="footer">
         <p class="footer__information">2026 © Spots</p>
       </footer>
@@ -227,7 +141,23 @@
           </form>
         </div>
       </div>
+
+      <div class="modal" id="preview-modal">
+        <div class="modal__preview">
+          <button class="modal__preview-close-btn" type="button">
+            <img src="./images/close-button-white.svg" alt="Close Button" />
+          </button>
+          <img
+            id="modal__preview-img"
+            src="#"
+            alt=""
+            class="modal__preview-image"
+          />
+          <p class="modal__preview-caption"></p>
+        </div>
+      </div>
+
+      <script src="./scripts/index.js"></script>
     </div>
-    <script src="./scripts/index.js"></script>
   </body>
 </html>

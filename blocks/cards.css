@@ -1,4 +1,4 @@
-.cards {
+.cards__list {
   width: min(100%, 80rem);
   margin: 0 auto;
   border-bottom: #21212166 1px solid;
@@ -16,6 +16,7 @@
   align-items: stretch;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .card__image {
@@ -43,10 +44,10 @@
 }
 
 .card__description-button {
-  background: none;
-  border: none;
   height: 20px;
   width: 23px;
+  background: transparent url(../images/State=Hover.png) center no-repeat;
+  border: none;
   cursor: pointer;
   opacity: 0.4;
   transition: opacity 0.2s ease;
@@ -57,8 +58,32 @@
   opacity: 1;
 }
 
+.card__description-button-img_active {
+  background-image: url("../images/like-active.svg");
+  opacity: 1;
+}
+
+.card__description-button-img_active:hover {
+  opacity: 0.4;
+}
+
+.card__delete-btn {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background: url(../images/delete-default.svg) center no-repeat;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.card__delete-btn:hover {
+  background-image: url(../images/delete-red.svg);
+}
+
 @media screen and (max-width: 627px) {
-  .cards {
+  .cards__list {
     grid-template-columns: 1fr;
     justify-items: center;
   }
