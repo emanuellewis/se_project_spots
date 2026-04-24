@@ -35,7 +35,7 @@
               <button class="profile__edit-button" type="button">
                 <img
                   src="./images/edit__profile-icon.svg"
-                  alt=""
+                  alt="Profile Edit Icon"
                   class="profile__edit-icon"
                 />
                 Edit Profile
@@ -45,7 +45,7 @@
           <button class="profile__new-post-button" type="button">
             <img
               src="./images/logo__button.svg"
-              alt=""
+              alt="Profile New Post Button"
               class="profile__new-post-button-image"
             />
             New Post
@@ -53,7 +53,7 @@
         </section>
 
         <section class="cards">
-          <ul class="cards__list"></ul>
+          <div class="cards__list"></div>
         </section>
 
         <template id="template-card">
@@ -94,6 +94,7 @@
                 type="text"
                 class="modal__input"
                 placeholder="Type your name"
+                required
               />
             </label>
 
@@ -104,6 +105,7 @@
                 type="text"
                 class="modal__input"
                 placeholder="Describe yourself"
+                required
               />
             </label>
             <button type="submit" class="modal__submit-btn">Save</button>
@@ -125,6 +127,7 @@
                 type="text"
                 class="modal__input"
                 placeholder="Paste a link the picture"
+                required
               />
             </label>
 
@@ -135,6 +138,7 @@
                 type="text"
                 class="modal__input"
                 placeholder="Type your caption"
+                required
               />
             </label>
             <button type="submit" class="modal__submit-btn">Save</button>

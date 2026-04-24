@@ -71,11 +71,7 @@ function getCardElement(data) {
 
   const cardImage = cardElement.querySelector(".card__image");
   const cardTitle = cardElement.querySelector(".card__title");
-  const cardPreview = document.querySelector("#preview-modal");
-  const cardPreviewImage = cardPreview.querySelector(".modal__preview-image");
-  const cardPreviewCaption = cardPreview.querySelector(
-    ".modal__preview-caption",
-  );
+
   cardImage.src = data.link;
   cardImage.alt = data.name;
   cardTitle.textContent = data.name;
@@ -133,16 +129,14 @@ function handleEditProfileFormSubmit(evt) {
 
 function handleNewPostFormSubmit(evt) {
   evt.preventDefault();
-
   const inputValues = {
     name: newPostCaption.value,
     link: newPostLink.value,
   };
-
   const cardElement = getCardElement(inputValues);
   cardsElement.prepend(cardElement);
-
-  const newCard = closeModal(newPostModal);
+  evt.target.reset();
+  closeModal(newPostModal);
 }
 
 editProfileForm.addEventListener("submit", handleEditProfileFormSubmit);

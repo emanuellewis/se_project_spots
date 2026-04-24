@@ -26,6 +26,12 @@
   object-position: center;
   object-fit: cover;
   margin-bottom: 12px;
+  cursor: pointer;
+  transition: opacity 0.4s ease;
+}
+
+.card__image:hover {
+  opacity: 0.8;
 }
 
 .card__description {
@@ -34,13 +40,19 @@
   font-weight: 500;
   max-width: 25.8125rem;
   width: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.card__title {
+  max-width: 22.0625rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
+  flex-shrink: 1;
+  min-width: 0;
 }
 
 .card__description-button {
@@ -77,6 +89,7 @@
   border: none;
   cursor: pointer;
   transition: 0.2s ease-in-out;
+  z-index: 1;
 }
 .card__delete-btn:hover {
   background-image: url(../images/delete-red.svg);
@@ -102,5 +115,9 @@
   .card__description {
     font-size: 1rem;
     text-align: center;
+  }
+
+  .card__title {
+    max-width: 14.6875rem; /* ~235px */
   }
 }

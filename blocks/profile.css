@@ -1,5 +1,4 @@
 .profile {
-  margin-top: 2rem;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -28,6 +27,7 @@
   padding: 0;
   display: flex;
   flex-direction: column;
+  max-width: 420px;
 }
 
 .profile__name {
@@ -37,6 +37,12 @@
   font-family: "Poppins", sans-serif, Arial;
   color: #212121;
   font-size: 32px;
+
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 
 .profile__description {
