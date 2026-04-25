@@ -8,116 +8,13 @@
   justify-content: center;
   display: grid;
   grid-template-columns: repeat(auto-fit, 413px);
-}
-
-.card {
-  width: 100%;
-  justify-content: center;
-  align-items: stretch;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-
-.card__image {
-  width: 413px;
-  height: 413px;
-  border-radius: 0.5rem;
-  object-position: center;
-  object-fit: cover;
-  margin-bottom: 12px;
-  cursor: pointer;
-  transition: opacity 0.4s ease;
-}
-
-.card__image:hover {
-  opacity: 0.8;
-}
-
-.card__description {
-  font-family: "Poppins", sans-serif, Arial;
-  font-size: 1.25rem; /* 20px */
-  font-weight: 500;
-  max-width: 25.8125rem;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.card__title {
-  max-width: 22.0625rem;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-
-  flex-shrink: 1;
-  min-width: 0;
-}
-
-.card__description-button {
-  height: 20px;
-  width: 23px;
-  background: transparent url(../images/State=Hover.png) center no-repeat;
-  border: none;
-  cursor: pointer;
-  opacity: 0.4;
-  transition: opacity 0.2s ease;
-  margin-left: auto;
-}
-
-.card__description-button:hover {
-  opacity: 1;
-}
-
-.card__description-button-img_active {
-  background-image: url("../images/like-active.svg");
-  opacity: 1;
-}
-
-.card__description-button-img_active:hover {
-  opacity: 0.4;
-}
-
-.card__delete-btn {
-  width: 32px;
-  height: 32px;
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  background: url(../images/delete-default.svg) center no-repeat;
-  border: none;
-  cursor: pointer;
-  transition: 0.2s ease-in-out;
-  z-index: 1;
-}
-.card__delete-btn:hover {
-  background-image: url(../images/delete-red.svg);
+  padding: 0;
+  list-style: none;
 }
 
 @media screen and (max-width: 627px) {
   .cards__list {
     grid-template-columns: 1fr;
     justify-items: center;
-  }
-
-  .card {
-    width: 288px;
-    align-self: center;
-  }
-
-  .card__image {
-    width: 288px;
-    height: 288px;
-    margin-bottom: 0.75rem;
-  }
-
-  .card__description {
-    font-size: 1rem;
-    text-align: center;
-  }
-
-  .card__title {
-    max-width: 14.6875rem; /* ~235px */
   }
 }
