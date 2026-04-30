@@ -29,11 +29,13 @@ const initialCards = [
   },
 ];
 
+// Edit Profile Elements
 const editProfileBtn = document.querySelector(".profile__edit-button");
 const editProfileModal = document.querySelector("#edit-profile-modal");
 const editProfileForm = editProfileModal.querySelector(".modal__form");
 const editProfileCloseBtn = editProfileModal.querySelector(".modal__close-btn");
-
+const editProfileSubmitBtn =
+  editProfileModal.querySelector(".modal__submit-btn");
 const profileName = document.querySelector(".profile__name");
 const profileDescription = document.querySelector(".profile__description");
 const profileNameInput = editProfileModal.querySelector("#profile-name_input");
@@ -41,10 +43,12 @@ const profileDescriptionInput = editProfileModal.querySelector(
   "#profile-description_input",
 );
 
+// New Post Elements
 const newPostBtn = document.querySelector(".profile__new-post-button");
 const newPostModal = document.querySelector("#new-post-modal");
 const newPostForm = newPostModal.querySelector(".modal__form");
 const newPostCloseBtn = newPostModal.querySelector(".modal__close-btn");
+const newPostSubmitBtn = newPostModal.querySelector(".modal__submit-btn");
 const newPostLink = newPostModal.querySelector("#new-post-image_input");
 const newPostCaption = newPostModal.querySelector("#new-post-image_caption");
 const templateCard = document
@@ -52,6 +56,7 @@ const templateCard = document
   .content.querySelector(".card");
 const cardsElement = document.querySelector(".cards__list");
 
+// Modal Preview Elements
 const modalPreview = document.querySelector("#preview-modal");
 const modalPreviewCloseBtn = modalPreview.querySelector(
   ".modal__preview-close-btn",
@@ -65,7 +70,6 @@ modalPreviewCloseBtn.addEventListener("click", () => {
   closeModal(modalPreview);
 });
 
-// TODO:
 function getCardElement(data) {
   const cardElement = templateCard.cloneNode(true);
 
@@ -124,6 +128,7 @@ function handleEditProfileFormSubmit(evt) {
   evt.preventDefault();
   profileName.textContent = profileNameInput.value;
   profileDescription.textContent = profileDescriptionInput.value;
+  disabledBtn(editProfileSubmitBtn);
   closeModal(editProfileModal);
 }
 
