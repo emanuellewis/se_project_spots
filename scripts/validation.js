@@ -33,20 +33,20 @@ const hasInvalidInput = (inputList) => {
   });
 };
 
-const disabledBtn = (buttonEl, config) => {
+const disableButton = (buttonEl, config) => {
   buttonEl.disabled = true;
   buttonEl.classList.add(config.inactiveButtonClass);
 };
-const enabledBtn = (buttonEl, config) => {
+const enableButton = (buttonEl, config) => {
   buttonEl.classList.remove(config.inactiveButtonClass);
   buttonEl.disabled = false;
 };
 
 const toggleButtonState = (inputList, buttonEl, config) => {
   if (hasInvalidInput(inputList)) {
-    disabledBtn(buttonEl, config);
+    disableButton(buttonEl, config);
   } else {
-    enabledBtn(buttonEl, config);
+    enableButton(buttonEl, config);
   }
 };
 
