@@ -36,6 +36,7 @@ Breakpoint - Layout
 ## Project Pitch Video
 
 Check out [EmanuelLewis-ProjectPitch-SpotsFinalStage](https://drive.google.com/file/d/1iYuArDXqsW4IZ7Yp4bq4LdWJc9EwYCPo/view?usp=drivesdk), where I describe my project and some challenges I faced while building it.
+Check out [EmanuelLewis-ProjectPitch-SpotsFinalStage-2](https://drive.google.com/file/d/1XyL8qd6cV1P7Kr7dLR9_jtnbN-wSe4bT/view?usp=drive_link), here is my 2nd video for the project
 
 ## Live Project
 
@@ -75,12 +76,6 @@ spots/
 ## Getting Started
 
 No build tools or dependencies required. Simply open `index.html` in any modern browser.
-
-```bash
-git clone <your-repo-url>
-cd spots
-open index.html
-```
 
 ## Author
 
