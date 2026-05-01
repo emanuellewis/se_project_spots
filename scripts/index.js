@@ -66,6 +66,27 @@ const modalPreviewCaption = modalPreview.querySelector(
   ".modal__preview-caption",
 );
 
+// Event Listeners - Close modals
+const escapeDown = (evt) => {
+  if (evt.key === "Escape") {
+    const openedModal = document.querySelector(".modal_is-opened");
+
+    if (openedModal) {
+      closeModal(openedModal);
+    }
+  }
+};
+document.addEventListener("keydown", escapeDown);
+
+const modals = document.querySelectorAll(".modal");
+modals.forEach((modal) => {
+  modal.addEventListener("click", (evt) => {
+    if (evt.target === modal) {
+      closeModal(modal);
+    }
+  });
+});
+
 modalPreviewCloseBtn.addEventListener("click", () => {
   closeModal(modalPreview);
 });
@@ -128,7 +149,7 @@ function handleEditProfileFormSubmit(evt) {
   evt.preventDefault();
   profileName.textContent = profileNameInput.value;
   profileDescription.textContent = profileDescriptionInput.value;
-  disabledBtn(editProfileSubmitBtn);
+  disabledBtn(editProfileSubmitBtn, settings);
   closeModal(editProfileModal);
 }
 
@@ -142,6 +163,7 @@ function handleNewPostFormSubmit(evt) {
   cardsElement.prepend(cardElement);
   evt.target.reset();
   closeModal(newPostModal);
+  disabledBtn(newPostSubmitBtn, settings);
 }
 
 editProfileForm.addEventListener("submit", handleEditProfileFormSubmit);
