@@ -48,7 +48,7 @@
 .card__description-button {
   height: 20px;
   width: 23px;
-  background: transparent url(../images/State=Hover.png) center no-repeat;
+  background: transparent url(../images/Like-Hover.svg) center no-repeat;
   border: none;
   cursor: pointer;
   opacity: 0.4;
