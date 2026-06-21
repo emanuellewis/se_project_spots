@@ -79,10 +79,12 @@ let currentUserId = null;
 function openModal(modal) {
   modal.classList.add("modal_is-opened");
   document.addEventListener("keydown", escapeDown);
+  editAvatarBtn.classList.add("profile__avatar__editor-is-opened");
 }
 function closeModal(modal) {
   modal.classList.remove("modal_is-opened");
   document.removeEventListener("keydown", escapeDown);
+  editAvatarBtn.classList.remove("profile__avatar__editor-is-opened");
 }
 
 // Event Listeners - Close modals

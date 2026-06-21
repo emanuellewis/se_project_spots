@@ -180,6 +180,7 @@
   flex-direction: column;
   align-content: center;
   border-radius: 8px;
+  margin: 0 20px;
 }
 
 .delete-label {
@@ -187,6 +188,7 @@
   font-weight: 500;
   font-size: 24px;
   color: #212121;
+  text-align: center;
 }
 
 .modal__delete-btn {
